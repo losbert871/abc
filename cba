@@ -1,0 +1,38 @@
+using System;
+
+namespace Program
+{
+
+    class Program
+    {
+
+        static void Main ()
+        {
+            int a;
+            int b;
+            int c;
+            Console.WriteLine("Введите размер угла а и угла b");
+
+            a = Convert.ToInt32(Console.ReadLine());
+            b = Convert.ToInt32(Console.ReadLine());
+
+            c = a + b;
+            if (a == 90) {
+                Console.WriteLine("Это прямоугольный треугольник");
+            }
+            else if (b == 90) {
+                Console.WriteLine("Это прямоугольный треугольник");
+            }
+            else if (c == 90) {
+                Console.WriteLine("Это прямоугольный треугольник");
+            }
+            else if (c >= 180) { Console.WriteLine("Такой треугольник не может существовать");
+            }
+            else {
+                Console.WriteLine("Это не прямоугольный треугольник");
+            }
+
+        } 
+
+    }
+}
